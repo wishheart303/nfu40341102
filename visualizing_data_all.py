@@ -1,3 +1,4 @@
+# 2017/03/23
 import matplotlib.pyplot as plt
 from collections import Counter
 
