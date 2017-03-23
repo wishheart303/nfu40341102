@@ -121,9 +121,6 @@ magic(1, 2, 3, 7, 9, key="word", key2="word2", id1="a0323")
 # unnamed args: (1, 2)
 # keyword args: {'key2': 'word2', 'key': 'word'}
 
-print("\ntest_06")
-
-
 
 
 
