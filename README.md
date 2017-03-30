@@ -43,7 +43,7 @@ sns.plt.show() ## 顯示出來
 
 
 ```
-#以下尚未完成
+#以下尚未完成修改
 
 n be run from the command line to get a demo of what it does (and to execute the examples from the book):
 
