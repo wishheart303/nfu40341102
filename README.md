@@ -2,6 +2,8 @@
 =========================
 
 以下是我使用Numpy、Pandas以及Seaborn所做出來的程式碼。(結合第2組和第3組所介紹的功能)
+其資料來源是http://amis.afa.gov.tw/fruit/FruitChartProdTransPriceVolumeTrend.aspx
+查詢台灣全部市場106年1月1日~3月30日的草莓的交易量(KG)
 
 ```python
 # coding=UTF-8
@@ -34,14 +36,14 @@ data_df = pd.DataFrame({"Date(Year = 106)": Date, ## 欄位名稱：值
                          }
                        )
 
-## sns.factorplot(data = 資料來源, x = “x 軸的 title”, y = “y 軸的 title”)
 sns.factorplot(data = data_df, x="Date(Year = 106)", y="Volume", ci = None)
 sns.plt.show() ## 顯示出來
 
 
 ```
-  
-Or can be run from the command line to get a demo of what it does (and to execute the examples from the book):
+#以下尚未完成
+
+n be run from the command line to get a demo of what it does (and to execute the examples from the book):
 
 ```bat
 python recommender_systems.py
