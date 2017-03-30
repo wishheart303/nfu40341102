@@ -1,9 +1,11 @@
 倩綾的筆記
 =========================
 
-以下是我使用Numpy、Pandas以及Seaborn所做出來的程式碼。(結合第2組和第3組所介紹的功能)
-其資料來源是http://amis.afa.gov.tw/fruit/FruitChartProdTransPriceVolumeTrend.aspx
-查詢台灣全部市場106年1月1日~3月30日的草莓的交易量(KG)
+以下是我使用Numpy、Pandas以及Seaborn所做出來的程式碼。(結合第2組和第3組所介紹的功能)。
+
+其資料來源是http://amis.afa.gov.tw/fruit/FruitChartProdTransPriceVolumeTrend.aspx。
+
+查詢台灣全部市場106年1月1日~3月30日的草莓的交易量(KG)。
 
 ```python
 # coding=UTF-8
