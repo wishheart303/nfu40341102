@@ -8,7 +8,7 @@ from functools import partial
 
 # 
 # functions for working with vectors
-
+# 2017/03/23
 
 def vector_add(v, w):
     """adds two vectors componentwise"""
