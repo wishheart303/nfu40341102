@@ -5,15 +5,11 @@ import math, random
 
 
 if __name__ == "__main__":
-    # coding=utf-8
-    #from __future__ import division
-    #import math, random
     #第一題 假設檢定
     #設定mu = 98 , sigma = 10
     mu_0, sigma_0 = 98,10
     print "mu_0", mu_0
     print "sigma_0", sigma_0
-
 
     # 常態函數分布累積method
     def normal_cdf(x, mu=0, sigma=1):
