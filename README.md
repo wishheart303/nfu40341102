@@ -7,6 +7,7 @@
 
 查詢台灣全部市場106年1月1日~3月30日的草莓的交易量(KG)。
 
+日期 : 2017/03/30
 ```python
 # coding=UTF-8
 import seaborn as sns
@@ -40,6 +41,58 @@ data_df = pd.DataFrame({"Date(Year = 106)": Date, ## 欄位名稱：值
 
 sns.factorplot(data = data_df, x="Date(Year = 106)", y="Volume", ci = None)
 sns.plt.show() ## 顯示出來
+
+
+```
+
+日期 : 2017/04/06
+
+CH06  Probability
+```python
+# coding=UTF-8
+from __future__ import division
+from collections import Counter
+import math, random
+from matplotlib import pyplot as plt
+
+def plot_normal_pdfs(plt):
+    xs = [x / 10.0 for x in range(-50, 50)]
+    plt.plot(xs,[normal_pdf(x,sigma=1) for x in xs],'-',label='mu=0,sigma=1')
+    plt.plot(xs,[normal_pdf(x,sigma=2) for x in xs],'--',label='mu=0,sigma=2')
+    plt.plot(xs,[normal_pdf(x,sigma=0.5) for x in xs],':',label='mu=0,sigma=0.5')
+    plt.plot(xs,[normal_pdf(x,mu=-1)   for x in xs],'-.',label='mu=-1,sigma=1')
+    plt.plot(xs, [normal_cdf(x, sigma=1, mu=3) for x in xs], ':', label='mu=3,sigma=1')
+    plt.plot(xs, [normal_cdf(x, mu=-4, sigma=0.5) for x in xs], '-.', label='mu=-1,sigma=1')
+    plt.legend()
+    plt.show()  
+    
+def random_ball():
+    return random.choice(["B", "Y"])
+
+a1 = 0
+a2 = 0
+a_both = 0
+n = 1000000
+random.seed(0)
+for _ in range(n):
+    get1 = random_ball()
+    get2 = random_ball()
+    if get1 == "B":
+        a1 += 1
+    if get1 == "B" and get2 == "B":
+        a_both += 1
+    if get2 == "B":
+        a2 += 1
+
+
+print "P(both):", a_both / n
+print "P(get1): ", a1 / n
+print "P(get2):", a2 / n
+print "P(get1 , get2): ", a1 * a2 / n / n
+print "P(get1 | get2) = P(both) / P(get2): ", (a_both / n) / (a2 / n)
+print "P(get1 | get2) = P(get1 , get2) / P(get2) = P(get1) * P(get2) / P(get2) = P(get1): ", a1 / n
+
+plot_normal_pdfs(plt)
 
 
 ```
