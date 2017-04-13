@@ -2,8 +2,8 @@
 
 ## 範例1
 from sklearn import datasets
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier ##將鄰近的點相連，去模擬出預測值
+from sklearn.model_selection import train_test_split  ## train與將資料分割與test的模型
+from sklearn.neighbors import KNeighborsClassifier    ##將鄰近的點相連，去模擬出預測值
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
