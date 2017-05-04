@@ -10,3 +10,7 @@ recent_media, next_ = api.user_recent_media(user_id=user_id, count=5)
 for media in recent_media:
     print (media.caption.text)
     print ('<img src="%s"/>' % media.images['thumbnail'].url)
+
+#if "data" in entry["comments"]:
+#	for comment in entry['comments']['data']:
+#		new_media.comments.append(Comment.object_from_dictionary(comment))
